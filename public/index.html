@@ -1,4 +1,171 @@
 <!doctype html>
+
+<html lang="en">
+
+<head> 
+
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <script src=client.js></script>	
+    <script src="script.js"></script>
+
+    <title> Family Feud Netball Team </title>
+
+</head>
+
 <body>
-    <script src=client.js></script>		
+
+    <div class="header">
+        <h1> Family Feud Netball Team</h1>
+        <p> Welcome to the home page of the Family Feud Mixed Netball Team! </p>
+        <div class="animation-container">
+            <img class="netball" id="animation" width=80px height=80px src="images/netaball2.png"> 
+        </div> 
+        
+    </div>
+
+    <br>
+
+    <h4> Upcoming Game </h4>
+    <div class="upcoming"> 
+        <p> Sunday 21st May @ 8:20pm</p>
+        <br> 
+        <p> vs Walking Wounded </p> 
+
+    </div>
+
+    <div class="availability"> 
+        <h4> Who's in? </h4>
+
+        <table> 
+            <tr>
+                <td>Ashley</td>
+                <td> <span class="material-icons" id="in" onclick="availability(event)">highlight_off</span></td>
+            <tr>
+                <td>Beth</td>
+                <td> <span class="material-icons" id="in" onclick="availability(event)">highlight_off</span></td>
+            </tr>
+            <tr>
+                <td>Cate</td>
+                <td> <span class="material-icons" id="in" onclick="availability(event)">highlight_off</span></td>
+            </tr>
+            <tr>
+                <td>Jason</td>
+                <td> <span class="material-icons" id="in" onclick="availability(event)">highlight_off</span></td>
+            </tr>
+            <tr>   
+                <td>Kristie</td>
+                <td> <span class="material-icons" id="in" onclick="availability(event)">highlight_off</span></td>
+            </tr>  
+            <tr> 
+                <td>Liam</td>
+                <td> <span class="material-icons" id="in" onclick="availability(event)">highlight_off</span></td>
+            </tr>  
+            <tr>  
+                <td>Nicole</td>
+                <td> <span class="material-icons" id="in" onclick="availability(event)">highlight_off</span></td>
+            </tr>   
+            <tr>  
+                <td>Noah</td>
+                <td> <span class="material-icons" id="in" onclick="availability(event)">highlight_off</span></td>
+            </tr>  
+            <tr> 
+                <td>Olivia</td>
+                <td> <span class="material-icons" id="in" onclick="availability(event)">highlight_off</span></td>
+            </tr>   
+            <tr>    
+                <td>Scotty</td>
+                <td> <span class="material-icons" id="in" onclick="availability(event)">highlight_off</span></td>
+            </tr> 
+            <tr>  
+                <td>Tam</td>
+                <td> <span class="material-icons" id="in" onclick="availability(event)">highlight_off</span></td>
+            </tr>  
+            <tr>   
+                <td>Tom</td>
+                <td> <span class="material-icons" id="in" onclick="availability(event)">highlight_off</span></td>
+            </tr>  
+            <tr>   
+                <td>Sub 1</td>
+                <td> <span class="material-icons" id="in" onclick="availability(event)">highlight_off</span></td>
+            </tr>  
+            <tr>   
+                <td>Sub 2</td>
+                <td> <span class="material-icons" id="in" onclick="availability(event)">highlight_off</span></td>
+            </tr>
+
+        </table>
+
+        
+
+    </div>
+    
+
+
+    <div class="flex-container" style="border: 1px solid black; margin-top: 10rem;"> 
+
+        <h5> Vote MVP </h5>
+        
+            <input type="radio" value="ao" name="poll" />
+            <label>Ashley</label>
+
+            <input type="radio" value="bo" name="poll" />
+            <label>Beth</label>
+
+            <input type="radio" value="co" name="poll" />
+            <label>Cate</label>
+            
+            <input type="radio" value="jp" name="poll" />
+            <label>Jason</label>
+
+            <input type="radio" value="kp" name="poll" />
+            <label>Kristie</label>
+
+            <input type="radio" value="lp" name="poll" />
+            <label>Liam</label>
+
+            <input type="radio" value="nl" name="poll" />
+            <label>Nicole</label>
+
+            <input type="radio" value="nm" name="poll" />
+            <label>Noah</label>
+
+            <input type="radio" value="op" name="poll" />
+            <label>Olivia</label>
+
+            <input type="radio" value="sp" name="poll" />
+            <label>Scotty</label>
+
+            <input type="radio" value="tp" name="poll" />
+            <label>Tam</label>
+
+            <input type="radio" value="tv" name="poll" />
+            <label>Tom</label>
+
+            <input type="text" name="poll" />
+            <label>Other</label>
+
+            <button type="submit"> Submit </button>
+
+    </div>
+
+
+    <div> 
+        <h4> Ladder </h4>
+    </div>
+
+    <div> 
+        <h5> Our team </h5>
+    </div>
+
+
 </body>
+
+</html>

@@ -1,0 +1,52 @@
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background: rgb(79, 0, 128);
+    color: white;
+    font-size: 30px;
+}
+
+.upcoming {
+    padding: 10px;
+    border: 2px solid orange;
+}
+
+.flex-container {
+    display:flex;
+}
+
+.radio {
+    display: inline-block;
+}
+
+
+.material-icons {
+    transform: scale(1.5);
+}
+
+.material-icons:hover {
+    color: rgb(21, 180, 21);
+}
+
+.netball {
+   
+}
+
+.animation-container {
+
+}
+
+@keyframes netballAnimation {
+    0% { 
+        transform: rotate(0deg) ;
+
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#animation {
+    animation: netballAnimation 10s infinite;
+}
