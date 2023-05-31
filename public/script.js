@@ -59,7 +59,9 @@ function draw() {
   background('white');
   noStroke();
   textSize(20);
-
+  fill('rgb(176,116,43)');
+  rect(0, 0, innerWidth, 1);
+  rect(0, 0, 1, innerHeight);
   fill('#E26F0B');
   text('Noah', 10, 30);
   ellipse(x, y, r*8, r*8);
