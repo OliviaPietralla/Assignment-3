@@ -11,10 +11,6 @@ body {
 
 }
 
-br {
-    
-}
-
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -54,111 +50,6 @@ img {
     display:flex;
 }
 
-.wrapper {
-    background: white;
-    border-radius: 15px;
-    max-width: 380px;
-    width: 100%;
-    padding: 25px;
-}
-
-.wrapper header {
-    font-size: 22px;
-    font-weight: 600;
-}
-
-.wrapper .poll-area {
-    margin: 20px 0 15px 0;
-}
-
-.poll-area label {
-    display: block;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    padding: 8px 15px;
-    border: 2px solid darkgrey;
-    transition: all 0.2s ease;
-}
-
-label.selected {
-    border-color: blueviolet;
-}
-
-label .row {
-    display: flex;
-    justify-content: space-between;
-}
-
-label .row .circle {
-    height: 19px;
-    width: 19px;
-    display: block;
-    margin-right: 10px;
-    border: 2px solid #ccc;
-    border-radius: 50%;
-}
-
-label.selected .row .circle {
-    border-color: blueviolet;
-}
-
-.row .circle::after {
-    content: "";
-    position: absolute;
-    height: 11px;
-    width: 11px;
-    background: #ccc;
-    top: 2px;
-    left: 2px;
-    border-radius: inherit;
-    display: none;
-}
-
-label.selected .row .circle::after {
-    display: block;
-    background: grey;
-}
-
-label:hover .row .circle::after {
-    display: block;
-    background: grey;
-}
-
-label .row span {
-    font-size: 16px;
-}
-
-label .row .percent {
-    display: none;
-}
-
-label .progress {
-    height: 7px;
-    width: 100%;
-    position: relative;
-    margin: 8px 0 3px 0;
-    background: grey;
-    border-radius: 30px;
-    display: none;
-}
-
-label .progress::after{
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: calc(1% * var(--w));
-    background: #ccc;
-    border-radius: inherit;
-} 
-
-label.selected .progress::after {
-    background: #6665ee;
-}
-
-label.selected :is(.percent, .progress){
-    display: block;
-}
-
 .radio {
     display: inline-block;
 }
@@ -187,7 +78,6 @@ label.selected :is(.percent, .progress){
 @keyframes netballAnimation {
     0% { 
         transform: rotate(0deg) ;
-
     }
     100% {
         transform: rotate(360deg);
@@ -195,5 +85,5 @@ label.selected :is(.percent, .progress){
 }
 
 #animation {
-    animation: netballAnimation 10s infinite;
+    animation: netballAnimation 5s infinite;
 }
